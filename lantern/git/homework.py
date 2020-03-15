@@ -46,9 +46,9 @@ def multiple_ints(first_value: int, second_value: int) -> int:
     """
     try:
         product_of_elements = first_value * second_value
-        return product_of_elements
+        return int(product_of_elements)
     except TypeError:
-        print("TypeError")
+        raise TypeError
 
 
 def multiple_ints_with_conversion(first_value: Any, second_value: Any) -> int:
@@ -74,11 +74,12 @@ def multiple_ints_with_conversion(first_value: Any, second_value: Any) -> int:
             print("Not valid input data")
         >>> "Not valid input data"
     """
-    if int(first_value) == int and int(second_value) == int:
+    if first_value == int and second_value == int:
         multiple_of_two_numbers = first_value * second_value
-        return multiple_of_two_numbers
+        return int(multiple_of_two_numbers)
     else:
         raise ValueError
+        print("Not valid input data")
 
 
 
