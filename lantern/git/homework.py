@@ -102,11 +102,7 @@ def some_loop_exercise() -> list:
     """
     Use loop to create list that contain int values from 0 to 12 except 6 and 7
     """
-    list_from_loop = [x for x in range(13)]
-
-    list_from_loop.remove(6)
-    list_from_loop.remove(7)
-    return list_from_loop
+    return [x for x in range(13) if x not in [6, 7]]
 
 
 def remove_from_list_all_negative_numbers(data: List[int]) -> list:
