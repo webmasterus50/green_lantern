@@ -78,11 +78,6 @@ class Cat:
             return self.saturation_level
         else:
             return "Your cat is died :("
-        #if self.saturation_level <= 0:
-        #    return "Your cat is dead :("
-        #else:
-        #    return self.saturation_level
-        #return "Your cat is died :(" if self.saturation_level == 0 else self.saturation_level
 
     def get_average_speed(self):
         return self.average_speed
