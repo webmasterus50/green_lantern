@@ -68,7 +68,7 @@ def test_cat_run(age, hours, result):
     (7, 4, "Your cat is died :("),
     (16, 1, 45)
 ])
-def test_cat_run(age, hours, result):
+def test_cheetah_run(age, hours, result):
     cheetah = Cheetah(age)
     cheetah.run(hours)
     assert cheetah.get_saturation_level() == result

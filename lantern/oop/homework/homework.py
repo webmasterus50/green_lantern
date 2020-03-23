@@ -28,6 +28,7 @@ class Cat:
     if saturation_level eq 0 return text like this: "Your cat is dead :("
   * Implement get_average_speed and return average_speed
   """
+
     def __init__(self, age):
         self.age = age
         self.average_speed = self._set_average_speed()
