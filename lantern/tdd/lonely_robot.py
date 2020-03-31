@@ -34,7 +34,7 @@ class Robot:
             raise RobotFallsFromAsteroidError()
         elif turns["W"][0] > self.asteroid.x or turns["W"][1] > self.asteroid.y:
             raise RobotFallsFromAsteroidError()
-        self.direction = turns[self.direction]
+        self.new_coordinates = turns[self.direction]
 
 class MissAsteroidError(Exception):
     pass

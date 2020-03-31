@@ -71,7 +71,7 @@ class TestTurns():
     def test_move(self, curent_direction, expected_x, expected_y):
         robot = Robot(3, 3, self.asteroid, curent_direction)
         robot.move()
-        assert robot.direction[0] == expected_x and robot.direction[1] == expected_y
+        assert robot.new_coordinates[0] == expected_x and robot.new_coordinates[1] == expected_y
 
     @pytest.mark.parametrize(
         "curent_direction,asteroid_size,robot_coordinates",
@@ -87,5 +87,3 @@ class TestTurns():
             asteroid = Asteroid(*asteroid_size)
             robot = Robot(*robot_coordinates, asteroid, curent_direction)
             robot.move()
-
-
